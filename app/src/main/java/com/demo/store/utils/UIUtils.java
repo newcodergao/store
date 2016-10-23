@@ -105,7 +105,8 @@ public class UIUtils {
     
 	public static void runInMainThread(Runnable runnable) {
 		if (isRunInMainThread()) {
-			runnable.run();
+			runnable.run();//调用start方法方可启动线程，
+			// 而run方法只是thread的一个普通方法调用，还是在主线程里执行。
 		} else {
 			post(runnable);
 		}

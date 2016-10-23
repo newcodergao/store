@@ -1,14 +1,14 @@
 package com.demo.store;
 
-import android.app.Activity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 
 /**
  * Created by GSJ
  * Date: 2016/10/20
  * Time: 14:17
  */
-public abstract class BaseActivity extends Activity {
+public abstract class BaseActivity extends AppCompatActivity {
 
     private static BaseActivity activity;
 

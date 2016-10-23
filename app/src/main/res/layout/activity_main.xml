@@ -3,6 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:toolbar="http://schemas.android.com/apk/res-auto"
     tools:context="com.demo.store.MainActivity">
 
     <RelativeLayout
@@ -10,8 +11,19 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         >
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            toolbar:navigationIcon="@mipmap/ic_launcher"
+            toolbar:logo="@mipmap/ic_launcher"
+            toolbar:titleTextColor="#fff"
+            toolbar:popupTheme="@style/Theme.ToolBar.Base"
+            android:theme="@style/Theme.ToolBar.ZhiHu"
+            />
         <com.demo.store.widget.PagerTab
             android:id="@+id/tabs"
+            android:layout_below="@id/toolbar"
             android:layout_width="match_parent"
             android:layout_height="42dp">
 
